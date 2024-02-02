@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Servlet.java to edit this template
  */
 
-import Model.Operators;
+import Models.Operators;
 import java.io.IOException;
 import java.io.PrintWriter;
 import jakarta.servlet.ServletException;
