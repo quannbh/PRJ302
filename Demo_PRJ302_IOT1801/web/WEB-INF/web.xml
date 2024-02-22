@@ -12,6 +12,10 @@
         <servlet-name>UserController</servlet-name>
         <servlet-class>Controllers.UserController</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>CustomerController</servlet-name>
+        <servlet-class>Controllers.CustomerController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Servlet1</servlet-name>
         <url-pattern>/demo1</url-pattern>
@@ -23,5 +27,9 @@
     <servlet-mapping>
         <servlet-name>UserController</servlet-name>
         <url-pattern>/user</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CustomerController</servlet-name>
+        <url-pattern>/customer</url-pattern>
     </servlet-mapping>
 </web-app>

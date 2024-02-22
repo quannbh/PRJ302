@@ -5,7 +5,11 @@
 package Models;
 
 public class Operators {
-    String a,b,c;
+
+    String a, b, c;
+
+    public Operators() {
+    }
 
     public Operators(String a, String b, String c) {
         this.a = a;
@@ -36,5 +40,5 @@ public class Operators {
     public void setC(String c) {
         this.c = c;
     }
-    
+
 }
