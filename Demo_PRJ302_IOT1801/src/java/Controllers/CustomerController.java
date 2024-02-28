@@ -61,7 +61,7 @@ public class CustomerController extends HttpServlet {
         //Xử lý thông tin
         CustomerDAO d = new CustomerDAO();
         //Trả kết quả
-        //Get danh sach user và trả về cho jsp
+        //Get danh sach customer và trả về cho jsp
         ArrayList<Customers> data = d.getCustomers();
         req.setAttribute("data", data);
         req.getRequestDispatcher("ListCustomer.jsp").forward(req, resp);

@@ -4,6 +4,7 @@
     Author     : ADMIN
 --%>
 
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -24,5 +25,4 @@
         </form>
     </body>
 </html>
-
-<--<!-- customer để tạo ra danh sách các customer, tạo thêm customer controller nữa -->
+<!-- customer để tạo ra danh sách các customer, tạo thêm customer controller nữa -->
