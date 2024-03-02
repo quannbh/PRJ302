@@ -16,6 +16,10 @@
         <br>
         <a href="product?mod=1">Create new product</a>
         <br><!-- comment -->
+        <form action="product" method="get">
+            Enter name: <input type="text" name="name" placeholder="Search by name">
+            <input type="submit" value="SEARCH" name="search">
+        </form>
         <table border="1">
             <tr>
                 <td>ID</td>
@@ -27,12 +31,13 @@
             </tr>
             <c:forEach items="${data}" var="u">
                 <tr>
-                    <td>${u.getId()}</td>
+                    <td><a href="product?mod=3&id=${u.getId()}">${u.getId()}</a></td>
                     <td>${u.getName()}</td>
                     <td>${u.getPrice()}</td>
                     <td>${u.getStock()}</td>
                     <td>${u.getImage()}</td>
                     <td>${u.getCategory()}</td>
+                    <td><a href="product?mod=2&id=${u.getId()}">Delete</a></td>
                 </tr>
             </c:forEach>
         </table>

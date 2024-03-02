@@ -2,6 +2,10 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/D:/FUHL/PRJ302/Demo_PRJ302_IOT1801/src/java/Models/ProductDAO.java</file>
+            <file>file:/D:/FUHL/PRJ302/Demo_PRJ302_IOT1801/src/java/Controllers/ProductController.java</file>
+            <file>file:/D:/FUHL/PRJ302/Demo_PRJ302_IOT1801/web/ListProduct.jsp</file>
+        </group>
     </open-files>
 </project-private>

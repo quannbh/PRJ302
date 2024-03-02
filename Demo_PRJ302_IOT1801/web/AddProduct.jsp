@@ -28,4 +28,3 @@
         </form>
     </body>
 </html>
-<!-- customer để tạo ra danh sách các customer, tạo thêm customer controller nữa -->
