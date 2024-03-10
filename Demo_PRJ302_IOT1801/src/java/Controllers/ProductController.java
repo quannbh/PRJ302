@@ -15,6 +15,7 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 import java.util.ArrayList;
 
 /**
@@ -61,6 +62,11 @@ public class ProductController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        //check xem đã có thông tin login trong session hay chưa
+        HttpSession sess = request.getSession();
+        if (sess.getAttribute("login") == null){
+            request.getRequestDispatcher("Error.jsp").forward(request, response);
+        }
         ProductDAO d = new ProductDAO();
         if (request.getParameter("mod") != null && request.getParameter("mod").equals("1")) {
             //get danh sach Category

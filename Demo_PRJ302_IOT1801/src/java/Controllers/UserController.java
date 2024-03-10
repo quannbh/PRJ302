@@ -12,6 +12,7 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 import java.util.ArrayList;
 
 /**
@@ -92,6 +93,9 @@ public class UserController extends HttpServlet {
         boolean check = d.checkUser(account, password);
         //Trả kết quả
         if (check) {
+            //Luu thong tin login vào session:
+            HttpSession sess = req.getSession();
+            sess.setAttribute("login", account);
             //get ten user va tra ve cho jsp
             String name = d.getNameByAccount(account);
             req.setAttribute("name", name);
